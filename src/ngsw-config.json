@@ -1,0 +1,60 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/manifest.json",
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "files": [
+        "/*.bundle.css",
+        "/*.bundle.js",
+        "/*.chunk.js",
+        "/*.eot",
+        "/*.svg",
+        "/*.woff2",
+        "/*.ttf",
+        "/*.woff"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "prefetch",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/img/pause-button.png",
+        "/assets/img/play-button.png",
+        "/assets/**"
+      ]
+    }
+  }],
+  "dataGroups": [
+    {
+      "name": "local-api",
+      "urls": [
+        "http://localhost:3000/**",
+        "https://podcast-app-api-rfpomhjv1.now.sh/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "1d",
+        "strategy": "performance"
+      }
+    },
+    {
+      "name": "ipapi-api",
+      "urls": [
+        "https://ipapi.co/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "1d",
+        "strategy": "performance"
+      }
+    }
+  ]
+}

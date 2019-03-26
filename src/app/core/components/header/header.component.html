@@ -1,0 +1,42 @@
+<ul class="nav" *ngIf="isHome">
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" routerLink="/podcast/home" title="Home">
+      <i class="nav__icon fa fa-home" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" routerLink="/podcast/subscribes" title="Subscribes">
+      <i class="nav__icon fa fa-heart" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" routerLink="/podcast/search" title="Search">
+      <i class="nav__icon fa fa-search" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" routerLink="/podcast/history" title="History">
+      <i class="nav__icon fa fa-history" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" routerLink="/dashboard" title="Dashboard">
+      <i class="nav__icon fa fa-address-book-o" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav__item" routerLinkActive="active">
+    <a class="nav__link" (click)="authService.SignOut()" title="logout">
+      <i class="nav__icon fa fa-ban" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+<ul class="nav-back" *ngIf="!isHome">
+  <li class="nav-back__item" routerLinkActive="active">
+    <a class="nav-back__link" (click)="goBack()">
+      <i class="nav-back__icon fa fa-arrow-left" aria-hidden="true"></i>
+    </a>
+    <li class="nav-back__item" routerLinkActive="active">
+      <h1 class="nav-back__title">{{ headerService.headerTitle }}</h1>
+    </li>
+</ul>

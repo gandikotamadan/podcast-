@@ -1,0 +1,102 @@
+{
+  "configVersion": 1,
+  "timestamp": 1553612922047,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/fontawesome-webfont.674f50d287a8c48dc19b.eot",
+        "/fontawesome-webfont.912ec66d7572ff821749.svg",
+        "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2",
+        "/fontawesome-webfont.b06871f281fee6b241d6.ttf",
+        "/fontawesome-webfont.fee66e712a8a08eef580.woff"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/css/spinner.css",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/cover-placeholder.jpg",
+        "/assets/img/pause-button.png",
+        "/assets/img/play-button.png",
+        "/assets/img/top-podcast-placeholder.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "local-api",
+      "patterns": [
+        "http:\\/\\/localhost:3000\\/.*",
+        "https:\\/\\/podcast-app-api-rfpomhjv1\\.now\\.sh\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "version": 1
+    },
+    {
+      "name": "ipapi-api",
+      "patterns": [
+        "https:\\/\\/ipapi\\.co\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/css/spinner.css": "ead256860a2f9d46322db616cbebb30c5e5c8f86",
+    "/assets/icons/icon-128x128.png": "ce15208b1148a620c6b83f5393685abed46e426c",
+    "/assets/icons/icon-144x144.png": "0ee9ed4a0477d3dc8ebe3c144524d8dfdee78f85",
+    "/assets/icons/icon-152x152.png": "dd3fe2697c93483b5f249cdd84cf3d8719f36c19",
+    "/assets/icons/icon-192x192.png": "f3c1b93cc00a5af522fa6a5c8e77d2b98a965ebd",
+    "/assets/icons/icon-384x384.png": "efa7f462966938eacffe8bcc542cef9dd0607362",
+    "/assets/icons/icon-512x512.png": "07052c48dec5bb379504d27c61e91675967a5686",
+    "/assets/icons/icon-72x72.png": "39d094d2ee22a141bc59b84269e6e1f804f2e079",
+    "/assets/icons/icon-96x96.png": "cab40956c7e06f802fcdfb0d834f85e9d89c2fd7",
+    "/assets/img/cover-placeholder.jpg": "f4d74fbe4231b078c1dd69b2eec25b73d29bacf8",
+    "/assets/img/pause-button.png": "1ff13be36cadf5151dc65aed1f39e39d28987da2",
+    "/assets/img/play-button.png": "fdb6e906313ae46743a6086c5bf53f9acbaec14d",
+    "/assets/img/top-podcast-placeholder.png": "291921b4c23c0c54b79a2ff5b4a18d234961a538",
+    "/fontawesome-webfont.674f50d287a8c48dc19b.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+    "/fontawesome-webfont.912ec66d7572ff821749.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+    "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+    "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+    "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
